@@ -1,0 +1,1 @@
+export const dummyTask = 'Lorem ipsum dolor sit amet';
