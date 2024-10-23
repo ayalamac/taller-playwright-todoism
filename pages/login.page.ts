@@ -16,14 +16,12 @@ export class TodoismLoginPage {
     }
 
     clickOnGetTestAccount = async (): Promise<void> => {
-        console.log('Clicked on Get Test Account');
         await this.getTestAccountButton.click();
     }
     
     awaitForUserGeneration = async (): Promise<string> => {
-        console.log('Waiting for user generation...');
         await expect(this.successNotificationToast).toHaveText('Generate success.');
-        return this.usernameInput.inputValue();
+        return await this.usernameInput.inputValue();
     }
     
     clickOnLogin = async (): Promise<void> => {

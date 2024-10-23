@@ -1,5 +1,6 @@
 .vscode/
 blob-report/
+evidences/
 node_modules/
 playwright-report/
 playwright/.cache/
